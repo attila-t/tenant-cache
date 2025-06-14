@@ -29,7 +29,7 @@ curl -X GET|DELETE [-H 'tenant-id: b'] http://localhost:8090/tenant-cache/comput
 curl -X GET|DELETE [-H 'tenant-id: b'] http://localhost:8090/tenant-cache/compute/bye
 ```
 
-While verifying the (lack of) logs or the caches in-between:
+While verifying the (lack of) log entries or the state of caches in-between:
 
 ``` bash
 curl http://localhost:8090/tenant-cache/actuator/caches | jq
