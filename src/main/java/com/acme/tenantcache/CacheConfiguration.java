@@ -32,7 +32,7 @@ public class CacheConfiguration {
   }
 
   private net.sf.ehcache.Ehcache createComputeCache(String name, net.sf.ehcache.CacheManager ehCacheManager) {
-    net.sf.ehcache.Cache cache = new net.sf.ehcache.Cache(computeCacheConfiguration(name));
+    net.sf.ehcache.Ehcache cache = new net.sf.ehcache.Cache(computeCacheConfiguration(name));
     cache.setCacheManager(ehCacheManager);
     cache.initialise();
     return cache;
